@@ -1,0 +1,496 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FFEEDE;
+}
+/* Header */
+.header-icons {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.header-icons img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    display: block;
+    border: 2px solid #754900;
+    border-radius: 50%;
+}
+/*Logo*/
+.logo {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    border: 2px solid #754900;
+    border-radius: 50%;
+    display: block;
+    flex-shrink: 0;
+}
+
+.Brand {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.top-header {
+    background-color: #FEB960;
+    color: #754900;
+    padding: 5px 0;
+}
+
+.top-header h1 {
+    font-size: 15px;
+    margin: 0;
+    padding-right: 20px;
+    text-align: right;
+}
+/*Menus yung puti*/
+.mid-header {
+    background-color: #FFFFFF;
+    color: #754900;
+    padding: 10px 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 60px;
+    gap: 20px;
+}
+
+
+nav {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    padding: 10px 0;
+    margin-left: auto;
+    margin-right: 50px;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: #754900;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.mid-header h1 {
+    font-size: 35px;
+}
+/*my cart*/
+.cart-button a {
+    display: inline-block;
+    background-color: #322011;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 15px 25px;
+    border-radius: 35px;
+    font-size: 20px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.cart-button a:hover {
+    background-color: #FEB960;
+    color: #754900;
+}
+
+.profile-button img {
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    border: 2px solid #754900;
+    border-radius: 50%;
+    display: block;
+    margin-right: 20px;
+}
+/*Content*/
+.Content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 45px 5%;
+    background-color: #FFEEDE;
+    min-height: 400px;
+}
+
+.CContent {
+    flex: 1;
+    max-width: 520px;
+}
+
+.CContent h1 {
+    color: #482313;
+    font-size: 100px;
+    margin-bottom: 2px;
+    white-space: nowrap;
+}
+
+.CContent h2 {
+    color: #995000;
+    font-size: 70px;
+    text-decoration: underline;
+    font-style: italic;
+    margin-bottom: 8px;
+    white-space: nowrap;
+}
+
+.CContent p {
+    font-family: 'Arial', sans-serif;
+    color: #654C40;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    background-color: #FFFFFF;
+    padding: 10px 10px;
+    border-radius: 12px;
+}
+
+.feature span {
+    color: #995000;
+    font-size: 12px;
+}
+
+.feature h4 {
+    color: #482313;
+    font-size: 20px;
+    margin: 0;
+}  
+
+.feature small {
+    color: #654C40;
+    font-size: 12px;
+}
+
+.Content-features {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.Content-button {
+    display: inline-block;
+    background-color: #FFD0A3;
+    color: #482313;
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 30px;
+    font-size: 18px;
+    transition: 0.3s;
+    text-align: center;
+    margin-left: 120px;
+}
+
+.Content-button:hover {
+    background-color: #FEB960;
+}
+
+.Content-image {
+    flex: 1;
+    max-width: 850px;
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    border-radius: 60px;
+    background-color: #FFEEDE;
+    transform: translateX(-90px);
+    border: 2px solid #754900;
+}
+
+.slides {
+    display: flex;
+    width: 300%;
+    height: 100%;
+    animation: autoSlide 12s infinite;
+}
+
+.slide {
+    width: 33.3333%;
+    height: 100%;
+    flex-shrink: 0;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 60px;
+}
+
+@keyframes autoSlide {
+    0%, 30% {
+        transform: translateX(0);
+    }
+
+    33.33%, 63.33% {
+        transform: translateX(-33.3333%);
+    }
+
+    66.66%, 96.66% {
+        transform: translateX(-66.6667%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+.maps {
+    background-color: #E3DACD;
+    padding: 40px;
+}
+.store-section {
+    padding: 50px 5%;
+    background-color: #FFEEDE;
+    width: 100%;
+    height: 580px;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.store-info {
+    width: 55%;
+}
+
+.store-info h1 {
+    color: #482313;
+    font-size: 60px;
+    margin-bottom: 2px;
+    white-space: nowrap;
+}
+
+.store-info p {
+    font-family: 'Arial', sans-serif;
+    color: #654C40;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.map-container {
+    width: 80%;
+    height: 500px;
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+
+/* OUR STORY */
+.StoryContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 45px 5%;
+    background-color: #FFEEDE;
+    min-height: 400px;
+}
+
+.StoryDetails {
+    flex: 1;
+    max-width: 600px;
+}
+
+.StoryDetails h2 {
+    color: #995000;
+    font-size: 55px;
+    text-decoration: underline;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.StoryDetails p {
+    font-family: Arial, sans-serif;
+    color: #654C40;
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.StoryImages {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.StoryImages img {
+    width: 45%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+    background-color: #FFFFFF;
+}
+
+.StoryContent p {
+    font-family: Arial, sans-serif;
+    color: #654C40;
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+.menu-section,
+.treats-section {
+    margin-bottom: 26px;
+    background-color: #fafafa;
+}
+
+.menu-section h2,
+.treats-heading {
+    font-family: Georgia, serif;
+    font-size: 24px;
+    font-weight: normal;
+    margin-bottom: 10px;
+    padding-left: 250px;
+}
+
+.product-container,
+.treats-container {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 17px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.product-card,
+.treats-card {
+    background-color: #ffeddf;
+    border-radius: 11px;
+    overflow: hidden;
+    min-width: 0;
+}
+
+.product-image,
+.treats-image {
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+}
+
+.product-image img,
+.treats-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Product Information */
+
+.product-info,
+.treats-info {
+    padding: 12px 10px 8px;
+}
+
+.product-info h3,
+.treats-info h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    line-height: 1.3;
+}
+
+.product-info p,
+.treats-info p {
+    font-size: 16px;
+    line-height: 1.3;
+    margin-bottom: 3px;
+}
+
+.product-info h4,
+.treats-info h4 {
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+/* Add to Cart Button */
+
+.product-info button,
+.treats-info button {
+    display: block;
+    width: 70%;
+    border: none;
+    border-radius: 5px;
+    background-color: #805000;
+    color: white;
+    font-size: 10px;
+    padding: 8px 3px;
+    cursor: pointer;
+}
+
+.product-info button:hover,
+.treats-info button:hover {
+    background-color: #5f3900;
+}
+
+/* Cookies & Treats - Specific Styles */
+
+.treats-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.treats-info h3 {
+    min-height: 30px;
+}
+
+.treats-info button {
+    margin-top: auto;
+}
+
+/* Responsive Layout */
+
+@media (max-width: 600px) {
+    .product-container,
+    .treats-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .product-image,
+    .treats-image {
+        height: 120px;
+    }
+
+    .menu-section,
+    .treats-section {
+        padding: 16px;
+    }
+
+    .menu-section h2,
+    .treats-heading {
+        padding-left: 0;
+    }
+}
